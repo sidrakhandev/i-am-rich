@@ -44,19 +44,19 @@ class LoaderState extends State<Loader> with SingleTickerProviderStateMixin{
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
         new Container(
-          color: Colors.white,
+          color: Colors.blue,
           height: 3.0,
           width: animation.value * 100.0, //animation.value ranges from 0 to 1  
         ),
         new Padding(padding: new EdgeInsets.only(bottom: 5.0)),
         new Container(
-          color: Colors.white,
+          color: Colors.blue,
           height: 3.0,
           width: animation.value * 75.0, //animation.value ranges from 0 to 1  
         ),
         new Padding(padding: new EdgeInsets.only(bottom: 5.0)),
         new Container(
-          color: Colors.white,
+          color: Colors.blue,
           height: 3.0,
           width: animation.value * 50.0, //animation.value ranges from 0 to 1  
         ),
@@ -82,7 +82,7 @@ class Home extends StatelessWidget {
       backgroundColor: Colors.blueGrey,
           appBar: AppBar(
             title: Text('I Am Rich'),
-            backgroundColor: Colors.blueGrey[900],
+            backgroundColor: Colors.pink[900],
           ),
           body: Center(
             child: new Loader(),
