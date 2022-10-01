@@ -14,7 +14,7 @@ class LoaderState extends State<Loader> with SingleTickerProviderStateMixin{
   void initState(){
     super.initState();
     //vsync make sure that no unecessary resource are used by our device
-    controller = new AnimationController(duration: new Duration(microseconds: 800), vsync: this);
+    controller = new AnimationController(duration: new Duration(microseconds: 900), vsync: this);
     //curve is used to define how our animation behaves
     animation = new CurvedAnimation(parent: controller, curve: Curves.bounceOut);
     animation.addListener((){
@@ -44,19 +44,37 @@ class LoaderState extends State<Loader> with SingleTickerProviderStateMixin{
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
         new Container(
-          color: Colors.blue,
+          gradient: LinearGradient(
+              begin: Alignment.topRight,
+              end: Alignment.bottomLeft,
+              colors: [
+                Colors.blue,
+                Colors.red,
+              ],
           height: 3.0,
           width: animation.value * 100.0, //animation.value ranges from 0 to 1  
         ),
         new Padding(padding: new EdgeInsets.only(bottom: 5.0)),
         new Container(
-          color: Colors.blue,
+          gradient: LinearGradient(
+              begin: Alignment.topRight,
+              end: Alignment.bottomLeft,
+              colors: [
+                Colors.blue,
+                Colors.red,
+              ],
           height: 3.0,
           width: animation.value * 75.0, //animation.value ranges from 0 to 1  
         ),
         new Padding(padding: new EdgeInsets.only(bottom: 5.0)),
         new Container(
-          color: Colors.blue,
+         gradient: LinearGradient(
+              begin: Alignment.topRight,
+              end: Alignment.bottomLeft,
+              colors: [
+                Colors.blue,
+                Colors.red,
+              ],
           height: 3.0,
           width: animation.value * 50.0, //animation.value ranges from 0 to 1  
         ),
