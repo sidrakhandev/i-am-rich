@@ -49,7 +49,7 @@ class LoaderState extends State<Loader> with SingleTickerProviderStateMixin{
               end: Alignment.bottomLeft,
               colors: [
                 Colors.blue,
-                Colors.red,
+                Colors.purple,
               ],
           height: 3.0,
           width: animation.value * 100.0, //animation.value ranges from 0 to 1  
@@ -61,7 +61,7 @@ class LoaderState extends State<Loader> with SingleTickerProviderStateMixin{
               end: Alignment.bottomLeft,
               colors: [
                 Colors.blue,
-                Colors.red,
+                Colors.purple,
               ],
           height: 3.0,
           width: animation.value * 75.0, //animation.value ranges from 0 to 1  
@@ -73,7 +73,7 @@ class LoaderState extends State<Loader> with SingleTickerProviderStateMixin{
               end: Alignment.bottomLeft,
               colors: [
                 Colors.blue,
-                Colors.red,
+                Colors.purple,
               ],
           height: 3.0,
           width: animation.value * 50.0, //animation.value ranges from 0 to 1  
